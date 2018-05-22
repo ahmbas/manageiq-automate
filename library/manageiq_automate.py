@@ -87,8 +87,6 @@ class ManageIQAutomate(object):
             url = alt_url
         else:
             url = self.url()
-        from remote_pdb import RemotePdb
-        RemotePdb('127.0.0.1', 4444).set_trace()
         result, _info = fetch_url(self._module, url, None, self._headers, 'get')
         return json.loads(result.read())
 
