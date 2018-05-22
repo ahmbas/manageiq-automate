@@ -421,7 +421,7 @@ def manageiq_argument_spec():
         automate_workspace=dict(default=None, type='str', no_log=True),
         group=dict(default=None, type='str'),
         X_MIQ_Group=dict(default=None, type='str'),
-        manageiq_validate_certs=dict(required=False, type='bool', default=True),
+        manageiq_validate_certs=dict(required=False, type='bool', default=False),
         force_basic_auth=dict(required=False, type='bool', default='no'),
         client_cert=dict(required=False, type='path', default=None),
         client_key=dict(required=False, type='path', default=None),
